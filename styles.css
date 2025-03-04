@@ -1,0 +1,165 @@
+:root{
+    /**
+    * Typography
+    */
+    
+
+    /**
+    * Colors
+    */
+
+
+    /**
+    * Spacing
+    */
+
+
+    /**
+    * Alignment
+    */
+
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body{
+    display:flex;
+    justify-content:center;
+    height:100vh;
+}
+
+.one-px-blk-brd{
+    border:1px solid black;
+}
+
+.app-container{
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr;
+    grid-template-rows: auto auto auto auto auto 1fr; /* Define rows with the last row stretching */
+    grid-auto-rows: min-content; /* Rows snap to the size of their content */
+    width:80%;
+    height:100%;
+
+    /**
+    * ROW 1 header
+    */
+    .container-header{
+        grid-column: 1 / 4;
+        grid-row: 1 / 2;
+
+        .header-brand{
+            display:flex;
+            flex-direction:row;
+            justify-content:start;
+        }
+    }
+
+    /**
+    * ROW 2 navigation
+    */
+    .container-nav{
+        grid-column: 1 / 4;
+        grid-row: 2 / 3;
+
+        .nav-ul{
+            display:flex;
+            flex-direction:row;
+            list-style-type:none;
+
+            .ul-li{
+                display:inline;
+                padding:0 10px;
+
+                .li-link{
+                    text-decoration:none;
+                    color:var(--color-text);
+                }
+            }
+        }
+    }
+
+    /**
+    * ROW 3 hero
+    */
+    .container-hero{
+        grid-column: 1 / 4;
+        grid-row: 3 / 4;
+    }
+
+    /**
+    * ROW 4 call to action
+    */
+    .container-cta{
+        grid-column: 1 / 4;
+        grid-row: 4 / 5;
+        display:flex;
+        flex-direction:row;
+        justify-content:space-evenly;
+
+        .cta-col{
+            display:flex;
+            flex-grow: 1;
+            flex-direction:column;
+            justify-content:center;
+            align-items:center;
+            outline: 1px solid black;
+        }
+    }
+
+    /**
+    * ROW 5 content
+    */
+    .container-content{
+        grid-column: 1 / 4;
+        grid-row: 5 / 6;
+    }
+
+    /**
+    * ROW 6 footer
+    */
+    .container-footer{
+        grid-column: 1 / 4;
+        grid-row: 6 / 7;
+        display:flex;
+        justify-content:space-evenly;
+        align-self: stretch; /* Stretch the footer to fill the remaining height */
+        
+        .footer-nav{
+            display:flex;
+
+            .nav-ul{
+                display:flex;
+                flex-direction: column;
+                list-style-type:none;   
+            }
+        }
+
+        .footer-copy{
+            display:flex;
+            flex-direction:row;
+            justify-content:center;
+            align-items:start;
+        }
+
+        .footer-social{
+            display:flex;
+            .social-ul{
+                display:flex;
+                list-style-type:none;
+                .ul-li{
+                    display:inline;
+                    padding:0 10px;
+
+                    li-link{
+                        text-decoration:none;
+                        color:var(--color-text);
+                    }
+                }
+            }
+        
+        }
+
+    }
+}
