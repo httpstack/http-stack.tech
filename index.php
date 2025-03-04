@@ -13,7 +13,7 @@
         <div class="container-header one-px-blk-brd">
             <div class="header-brand">
                 <div class="brand-logo">
-                    <i class="fas fa-code"></i>
+                    <i class="httpstack"></i>
                     <span class="brand-name">HTTPStack.tech</span>
                 </div>
             </div>
@@ -29,11 +29,24 @@
         </div>
 
         <!--ROW 3-->
-        <div class="container-hero one-px-blk-brd">HERO</div>
+        <div class="container-hero one-px-blk-brd">
+            <canvas id="heroCanvas" width="800" height="200"></canvas>
+        </div>
         
         <!--ROW 4-->
         <div class="container-cta one-px-blk-brd">
-            <div class="cta-col">cta1</div>
+            <div class="cta-col">
+                <div class="card">
+                    <div class="card-header">Card Header</div>
+                    <div class="card-body">
+                        <img src="path/to/image.jpg" alt="Image">
+                        <p>Some text that describes the content of the card.</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="#" class="btn">Call to Action</a>
+                    </div>
+                </div>
+            </div>
             <div class="cta-col">cta2</div>
             <div class="cta-col">cta3</div>
         </div>
@@ -84,5 +97,6 @@
         </div>
     </div>
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="scripts.js"></script>
 </body>
 </html>
